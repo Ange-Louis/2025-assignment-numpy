@@ -41,8 +41,8 @@ def max_index(X):
         raise ValueError("Input must be a numpy array.")
     if X.ndim != 2:
         raise ValueError("Input must be a 2D array.")
-    
-    else :
+
+    else:
 
         i, j = np.unravel_index(np.argmax(X), X.shape)
         return i, j
@@ -67,7 +67,7 @@ def wallis_product(n_terms):
     """
 
     pi = 2
-    for n in range(1, n_terms+1): 
+    for n in range(1, n_terms + 1):
         pi *= (4*n**2)/(4*n**2-1)
 
     return pi
